@@ -19,6 +19,13 @@ grandTE package includes some third-party software:
 * [MiteFinderII](https://github.com/jhu99/miteFinder)
 * [LTR_FINDER_parallel](https://github.com/oushujun/LTR_FINDER_parallel)
 * [ltrharvest](http://genometools.org/license.html)
+* [LTR_retriever](https://github.com/oushujun/LTR_retriever)
+* [SINE-Finder]()
+* [SINE_scan](https://github.com/maohlzj/SINE_Scan)
+* [HelitronScanner](http://bo.csam.montclair.edu/helitronscanner/)
+* [cd-hit](http://weizhong-lab.ucsd.edu/cd-hit/)
+* [RepeatModeler](https://github.com/Dfam-consortium/RepeatModeler)
+* [Repeatmasker](http://www.repeatmasker.org/)
 
 
 References
@@ -38,6 +45,16 @@ Ou, Shujun, and Ning Jiang. “LTR_FINDER_parallel: parallelization of LTR_FINDE
 
 Ellinghaus, David et al. “LTRharvest, an efficient and flexible software for de novo detection of LTR retrotransposons.” BMC bioinformatics vol. 9 18. 14 Jan. 2008, [doi:10.1186/1471-2105-9-18](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2253517/)
 
+Ou, Shujun, and Ning Jiang. “LTR_retriever: A Highly Accurate and Sensitive Program for Identification of Long Terminal Repeat Retrotransposons.” Plant physiology vol. 176,2 (2018): 1410-1422. [doi:10.1104/pp.17.01310](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5813529/)
 
+Wenke, Torsten et al. “Targeted identification of short interspersed nuclear element families shows their widespread existence and extreme heterogeneity in plant genomes.” The Plant cell vol. 23,9 (2011): 3117-28. [doi:10.1105/tpc.111.088682](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3203444/)
 
+Mao, Hongliang, and Hao Wang. “SINE_scan: an efficient tool to discover short interspersed nuclear elements (SINEs) in large-scale genomic datasets.” Bioinformatics (Oxford, England) vol. 33,5 (2017): 743-745. [doi:10.1093/bioinformatics/btw718](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5408816/)
 
+Xiong, Wenwei, and Chunguang Du. “Mining hidden polymorphic sequence motifs from divergent plant helitrons.” Mobile genetic elements vol. 4,5 1-5. 30 Oct. 2014, [doi:10.4161/21592543.2014.971635](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4588551/)
+
+Fu, Limin et al. “CD-HIT: accelerated for clustering the next-generation sequencing data.” Bioinformatics (Oxford, England) vol. 28,23 (2012): 3150-2. [doi:10.1093/bioinformatics/bts565](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3516142/)
+
+Flynn, Jullien M et al. “RepeatModeler2 for automated genomic discovery of transposable element families.” Proceedings of the National Academy of Sciences of the United States of America vol. 117,17 (2020): 9451-9457. [doi:10.1073/pnas.1921046117](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7196820/)
+
+Chen, Nansheng. “Using RepeatMasker to identify repetitive elements in genomic sequences.” Current protocols in bioinformatics vol. Chapter 4 (2004): Unit 4.10. [doi:10.1002/0471250953.bi0410s05](https://pubmed.ncbi.nlm.nih.gov/18428725/)
