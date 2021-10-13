@@ -1,7 +1,32 @@
 # grandTE
 Genomic transposon prediction analysis
 
+Availability
+------------
 
+grandTE is available for Linux and MacOS platforms.
+
+Building Requirements
+---------------------
+
+* Python 2.7 or 3.5+ (with setuptools package installed)
+* matplotlib
+* numpy
+* scipy
+
+Local building (without installation)
+-------------------------------------
+
+You may use the package locally without system installation.
+To get and compile the latest git version, run:
+
+    git clone https://github.com/zxgsy520/grandTE
+    cd grandTE
+    chmod 755 grandte.py
+
+Then, grandTE will be available as:
+
+    python grandte.py
 
 
 
