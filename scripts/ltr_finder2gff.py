@@ -15,29 +15,36 @@ __email__ = "invicoun@foxmail.com"
 __all__ = []
 
 
-def read_tsv(file, sep=None):
+def read_ltr_finder(file):
 
+    r = []
     for line in open(file):
         line = line.strip()
 
-        if not line or line.startswith("#"):
+        if line.startswith("["):
+            r.append(line.split()[1])
+        elif line.startswith("Location"):
+            line = line.split()
+            r += [line[2], line[4], line[-1].split(":")[1]]
+        elif line.startswith("Score"):
+            line = line.split(":")
+            score = float(line[-1].strip("]"))*100
+            r.append(score)
+            yield r
+            r = []
+        else:
             continue
 
-        yield line.split(sep)
 
-
-def scn2gff(file, source="LTR_retriever", type="LTR"):
+def ltr_finder2gff(file, source="ltr_finder", type="LTR"):
 
     locus = type
     n = 0
-    for line in read_tsv(file):
+    for seqid, start, end, strand, score in read_ltr_finder(file):
         n += 1
-        score = float(line[9])*100
-        if line[-2]!="unknown":
-            type = "%s/%s" % (type, line[-2])
         print("{seqid}\t{source}\t{type}\t{start}\t{end}\t{score:.2f}\t{strand}\t.\tID={locus_tag}".format(
-                seqid=line[11], source=source, type=type, start=line[0], end=line[1],
-                score=score, strand=line[12], locus_tag="%s_%05d" % (locus, n)
+                seqid=seqid, source=source, type=type, start=start, end=end,
+                score=score, strand=strand, locus_tag="%s_%05d" % (locus, n)
             )
         )
     return 0
@@ -46,7 +53,7 @@ def scn2gff(file, source="LTR_retriever", type="LTR"):
 def add_hlep_args(parser):
 
     parser.add_argument('input', metavar='FILE', type=str,
-        help='Input LTR_retriever prediction result file')
+        help='Input ltr_finder prediction result file')
 
     return parser
 
@@ -61,16 +68,16 @@ def main():
     parser = argparse.ArgumentParser(formatter_class=argparse.RawDescriptionHelpFormatter,
     description='''
 name:
-    scn2gff.py: Convert LTR_retriever prediction result file to gff file
+    ltr_finder2gff.py: Convert ltr_finder prediction result file to gff file
 attention:
-    scn2gff.py retriever.all.scn >retriever.gff
+    ltr_finder2gff.py ltr_finder.tsv >ltr_finder.gff
 version: %s
 contact:  %s <%s>\
         ''' % (__version__, ' '.join(__author__), __email__))
 
     args = add_hlep_args(parser).parse_args()
 
-    scn2gff(args.input)
+    ltr_finder2gff(args.input)
 
 
 if __name__ == "__main__":
