@@ -35,6 +35,7 @@ Third-party
 
 grandTE package includes some third-party software:
 
+* [transposon_annotation_tools](https://github.com/DerKevinRiehl/transposon_annotation_tools)
 * [blastn](https://ftp.ncbi.nlm.nih.gov/blast/executables/legacy.NOTSUPPORTED/)
 * [muscle](http://www.drive5.com/muscle/downloads.htm)
 * [mdust](https://github.com/lh3/mdust)
