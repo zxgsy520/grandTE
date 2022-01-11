@@ -14,6 +14,9 @@ Building Requirements
 * numpy
 * scipy
 * [ps_scan](https://ftp.expasy.org/databases/prosite/ps_scan/)
+* [ltr_finder](https://github.com/xzhub/LTR_Finder)
+* [LTR_FINDER_parallel](https://github.com/oushujun/LTR_FINDER_parallel)
+* [LTR_retriever](https://github.com/oushujun/LTR_retriever)
 
 Required Batabase
 ---------------------
