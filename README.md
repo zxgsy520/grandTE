@@ -10,11 +10,14 @@ Building Requirements
 ---------------------
 
 * Python 2.7 or 3.5+ (with setuptools package installed)
-*    matplotlib
-*    numpy
-*    scipy
+* matplotlib
+* numpy
+* scipy
 * [ps_scan](https://ftp.expasy.org/databases/prosite/ps_scan/)
-*    [prosite.dat](https://ftp.expasy.org/databases/prosite/prosite.dat)
+
+Required Batabase
+---------------------
+* [prosite.dat](https://ftp.expasy.org/databases/prosite/prosite.dat)
 
 
 Local building (without installation)
