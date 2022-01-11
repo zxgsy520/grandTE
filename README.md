@@ -13,6 +13,8 @@ Building Requirements
 * matplotlib
 * numpy
 * scipy
+* [ps_scan](https://ftp.expasy.org/databases/prosite/ps_scan/)
+
 
 Local building (without installation)
 -------------------------------------
