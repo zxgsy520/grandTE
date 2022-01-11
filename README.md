@@ -13,15 +13,6 @@ Building Requirements
 * matplotlib
 * numpy
 * scipy
-* [ps_scan](https://ftp.expasy.org/databases/prosite/ps_scan/)
-* [ltr_finder](https://github.com/xzhub/LTR_Finder)
-* [LTR_FINDER_parallel](https://github.com/oushujun/LTR_FINDER_parallel)
-* [LTR_retriever](https://github.com/oushujun/LTR_retriever)
-
-Required Batabase
----------------------
-* [prosite.dat](https://ftp.expasy.org/databases/prosite/prosite.dat)
-
 
 Local building (without installation)
 -------------------------------------
@@ -38,10 +29,12 @@ Then, grandTE will be available as:
     python grandte.py
 
 
+Required Batabase
+---------------------
+* [prosite.dat](https://ftp.expasy.org/databases/prosite/prosite.dat)
 
 Third-party
 -----------
-
 grandTE package includes some third-party software:
 
 * [transposon_annotation_tools](https://github.com/DerKevinRiehl/transposon_annotation_tools)
@@ -52,6 +45,8 @@ grandTE package includes some third-party software:
 * [mustv2](http://www.healthinformaticslab.org/supp/resources.php)
 * [mitetracker](https://github.com/INTABiotechMJ/MITE-Tracker)
 * [MiteFinderII](https://github.com/jhu99/miteFinder)
+* [ps_scan](https://ftp.expasy.org/databases/prosite/ps_scan/)
+* [ltr_finder](https://github.com/xzhub/LTR_Finder)
 * [LTR_FINDER_parallel](https://github.com/oushujun/LTR_FINDER_parallel)
 * [ltrharvest](http://genometools.org/license.html)
 * [LTR_retriever](https://github.com/oushujun/LTR_retriever)
