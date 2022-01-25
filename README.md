@@ -56,8 +56,7 @@ grandTE package includes some third-party software:
 * [cd-hit](http://weizhong-lab.ucsd.edu/cd-hit/)
 * [RepeatModeler](https://github.com/Dfam-consortium/RepeatModeler)
 * [Repeatmasker](http://www.repeatmasker.org/)
-
-
+* [TEclass]https://github.com/zxgsy520/TEclass
 References
 -----------
 
