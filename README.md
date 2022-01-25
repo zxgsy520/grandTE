@@ -56,7 +56,7 @@ grandTE package includes some third-party software:
 * [RepeatModeler](https://github.com/Dfam-consortium/RepeatModeler)
 * [Repeatmasker](http://www.repeatmasker.org/)
 * [TEclass](https://github.com/zxgsy520/TEclass) 
-说明：安装RepeatModeler和Repeatmasker可以先使用TEclass(TEclass软件比较老，可以用最新的一些分类软件试试)对Repeat数据库里面未分类的重复序列进行分类.
+* 说明：安装RepeatModeler和Repeatmasker可以先使用TEclass(TEclass软件比较老，可以用最新的一些分类软件试试)对Repeat数据库里面未分类的重复序列进行分类.
 
 References
 -----------
