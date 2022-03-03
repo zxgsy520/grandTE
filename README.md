@@ -38,6 +38,7 @@ Third-party
 grandTE package includes some third-party software:
 * [transposon_annotation_tools](https://github.com/DerKevinRiehl/transposon_annotation_tools)
 * [blastn](https://ftp.ncbi.nlm.nih.gov/blast/executables/legacy.NOTSUPPORTED/)
+* [GMATA](https://sourceforge.net/projects/gmata/)
 * [muscle](http://www.drive5.com/muscle/downloads.htm)
 * [mdust](https://github.com/lh3/mdust)
 * [MITE-Hunter](http://target.iplantcollaborative.org/mite_hunter.html)
@@ -60,6 +61,7 @@ grandTE package includes some third-party software:
 
 References
 -----------
+Wang, Xuewen, and Le Wang. “GMATA: An Integrated Software Package for Genome-Scale SSR Mining, Marker Development and Viewing.” Frontiers in plant science vol. 7 1350. 13 Sep. 2016, [doi:10.3389/fpls.2016.01350](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5020087/)
 
 Ge, Ruiquan et al. “MUSTv2: An Improved De Novo Detection Program for Recently Active Miniature Inverted Repeat Transposable Elements (MITEs).” Journal of integrative bioinformatics vol. 14,3 20170029. 10 Aug. 2017, [doi:10.1515/jib-2017-0029](https://pubmed.ncbi.nlm.nih.gov/28796642/)
 
