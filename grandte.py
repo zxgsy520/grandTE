@@ -4,6 +4,7 @@
 import argparse
 
 from grandte.parser import *
+from grandte.grand_trf import trf
 from grandte.grand_mite import mite
 from grandte.grand_ltr import ltr
 from grandte.grand_sine import sine
@@ -11,7 +12,7 @@ from grandte.grand_tir import tir
 from grandte.grand_helitron import helitron
 from grandte.grand_repeat import repeat
 from grandte.grand_all import grand_all
-from grandte.grand_multi import grand_multi, add_grand_multi_args
+#from grandte.grand_multi import grand_multi, add_grand_multi_args
 
 from grandte import __version__, __email__, __author__
 
@@ -22,6 +23,10 @@ def add_grandte_parser(parser):
         title='command',
         dest='commands')
     subparsers.required = True
+    
+    trf_parser = subparsers.add_parser("trf", help="Predict tandem repeats")
+    trf_parser = add_trf_args(trf_parser)
+    trf_parser.set_defaults(func=trf)
 
     mite_parser = subparsers.add_parser("mite", help="Prediction MITE transposons")
     mite_parser = add_mite_args(mite_parser)
@@ -51,9 +56,9 @@ def add_grandte_parser(parser):
     grand_all_parser = add_all_args(grand_all_parser)
     grand_all_parser.set_defaults(func=grand_all)
 
-    grand_multi_parser = subparsers.add_parser("multi", help="Multi-sample analysis of genes")
-    grand_multi_parser = add_grand_multi_args(grand_multi_parser)
-    grand_multi_parser.set_defaults(func=grand_multi)
+#    grand_multi_parser = subparsers.add_parser("multi", help="Multi-sample analysis of genes")
+#    grand_multi_parser = add_grand_multi_args(grand_multi_parser)
+#    grand_multi_parser.set_defaults(func=grand_multi)
     
     return parser
 
