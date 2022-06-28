@@ -43,7 +43,7 @@ grandTE package includes some third-party software:
 * [muscle](http://www.drive5.com/muscle/downloads.htm)
 * [mdust](https://github.com/lh3/mdust)
 * [MITE-Hunter](http://target.iplantcollaborative.org/mite_hunter.html)
-* [mustv2](http://www.healthinformaticslab.org/supp/resources.php)
+* [mustv2](http://www.healthinformaticslab.org/supp/resources.php) （该软件算法上有问题，有时候会长时间没有结果，产生10几个T的文件）
 * [mitetracker](https://github.com/INTABiotechMJ/MITE-Tracker)
 * [MiteFinderII](https://github.com/jhu99/miteFinder)
 * [ps_scan](https://ftp.expasy.org/databases/prosite/ps_scan/)
